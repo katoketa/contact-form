@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
 </head>
 <body>
-    <heder class="header">
+    <header class="header">
         <div class="header__inner">
             <a href="/" class="header__logo">
                 Contact Form
             </a>
         </div>
-    </heder>
+    </header>
     <main>
         <div class="contact-form__content">
             <div class="contact-form__heading">
