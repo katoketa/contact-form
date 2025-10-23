@@ -32,7 +32,9 @@
                             <input type="text" name="name" placeholder="テスト太郎">
                         </div>
                         <div class="form__error">
-                            <!-- バリデーション機能を実装したら記述します。 -->
+                            @error('name')
+                            {{ $message }}
+                            @enderror
                         </div>
                     </div>
                 </div>
@@ -46,7 +48,9 @@
                             <input type="email" name="email" placeholder="test@example.com">
                         </div>
                         <div class="form__error">
-                            <!-- バリデーション機能を実装したら記述します。 -->
+                            @error('email')
+                            {{ $message }}
+                            @enderror
                         </div>
                     </div>
                 </div>
@@ -60,7 +64,9 @@
                             <input type="tel" name="tel" placeholder="09012345678">
                         </div>
                         <div class="form__error">
-                            <!-- バリデーション機能を実装したら記述します。 -->
+                            @error('tel')
+                            {{ $message }}
+                            @enderror
                         </div>
                     </div>
                 </div>
