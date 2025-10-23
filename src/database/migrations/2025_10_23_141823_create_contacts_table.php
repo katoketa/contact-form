@@ -15,10 +15,10 @@ class CreateContactsTable extends Migration
     {
         Schema::create('contacts', function (Blueprint $table) {
             $table->id();
-            $table->varchar('name', 255);
-            $table->varchar('email', 255);
-            $table->varchar('tel', 11);
-            $table->text('content');
+            $table->string('name');
+            $table->string('email');
+            $table->string('tel', 11);
+            $table->text('content')->nullable();
             $table->timestamps();
         });
     }
